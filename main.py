@@ -25,6 +25,13 @@ DEFAULT_EXPIRATION_FORMAT = "%Y-%m-%d %H:%M:%S"
 
 app = FastAPI()
 
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+
 # генерация короткого кода из URL
 def generate_short_code(url: str) -> str:
     hash_object = hashlib.md5(url.encode())
