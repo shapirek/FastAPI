@@ -12,6 +12,8 @@ from fastapi.security import OAuth2PasswordBearer, OAuth2PasswordRequestForm
 from datetime import datetime, timedelta
 from typing import Optional
 
+from fastapi.middleware.cors import CORSMiddleware 
+
 import uvicorn
 
 # это я пытался настроить регистрацию -- но времени не хватило, так что оставлю на память
