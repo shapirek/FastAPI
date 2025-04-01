@@ -698,3 +698,7 @@ def search_links(request: Request):
     </html>
     """
     return html
+    
+if __name__ == "__main__":  # ← Последние 3 строки в файле
+    import uvicorn
+    uvicorn.run(app, host="0.0.0.0", port=10000)
