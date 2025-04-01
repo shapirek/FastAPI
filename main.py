@@ -186,7 +186,7 @@ def shorten_url(
             </html>
             """
     conn.close()
-    short_url = f"http://127.0.0.1:8001/r/{short_code}"
+    short_url = f"/r/{short_code}"
     html_content = f"""
     <html>
       <head>
