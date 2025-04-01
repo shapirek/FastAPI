@@ -12,6 +12,8 @@ from fastapi.security import OAuth2PasswordBearer, OAuth2PasswordRequestForm
 from datetime import datetime, timedelta
 from typing import Optional
 
+import uvicorn
+
 # это я пытался настроить регистрацию -- но времени не хватило, так что оставлю на память
 SECRET_KEY = "мой-очень-секретный-ключ-12345"
 ALGORITHM = "HS256"
